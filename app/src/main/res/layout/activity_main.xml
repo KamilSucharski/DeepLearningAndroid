@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kamilsucharski.deeplearningandroid.presentation.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/button_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/mock_data_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/mock_data"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/learn_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/learn"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_margin="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>

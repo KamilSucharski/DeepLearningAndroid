@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/job_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/job_name"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/job_item_salary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:text="@string/job_salary"/>
+
+            <TextView
+                android:id="@+id/job_item_salary_unit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:text="@string/job_salary_unit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/job_item_percentage_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/job_percentage_label"/>
+
+            <TextView
+                android:id="@+id/job_item_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/job_percentage"/>
+
+            <TextView
+                android:id="@+id/job_item_percentage_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/job_percentage_unit"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/job_item_dislike_button"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/dislike"
+                    android:layout_margin="3dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/job_item_like_button"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:text="@string/like"
+                    android:layout_margin="3dp"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

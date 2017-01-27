@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DeepLearningAndroid</string>
+    <string name="mock_data">MOCK DATA</string>
+    <string name="learn">LEARN</string>
+    <string name="refresh">REFRESH</string>
+    <string name="job_name">Job name</string>
+    <string name="job_salary">10</string>
+    <string name="job_salary_unit">$</string>
+    <string name="job_percentage_label">Likelihood: </string>
+    <string name="job_percentage">50</string>
+    <string name="job_percentage_unit">%</string>
+    <string name="like">LIKE</string>
+    <string name="dislike">DISLIKE</string>
+</resources>
