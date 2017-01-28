@@ -4,7 +4,7 @@ import java.util.Map;
 
 public interface LearnableModel {
     int[] getFeatures();
-    void setFeatures(int[] feautures);
+    void setFeatures(int[] features);
     int[] getLabels();
     void setLabels(int[] labels);
     Map<String, Integer> getValues();

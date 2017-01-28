@@ -28,10 +28,10 @@ public class Job implements LearnableModel {
     }
 
     @Override
-    public void setFeatures(int[] feautures) {
-        type = feautures[0];
-        salary = feautures[1];
-        choice = feautures[2];
+    public void setFeatures(int[] features) {
+        type = features[0];
+        salary = features[1];
+        choice = features[2];
     }
 
     @Override

@@ -47,7 +47,8 @@ public class BinaryClassifier {
             .list()
             .layer(0, new DenseLayer.Builder().nIn(featuresCount).nOut(3).build())
             .layer(1, new DenseLayer.Builder().nIn(3).nOut(3).build())
-            .layer(2, new OutputLayer.Builder(LossFunctions.LossFunction.XENT).activation(Activation.SIGMOID).nIn(3).nOut(labelsCount).build())
+            .layer(2, new OutputLayer.Builder(LossFunctions.LossFunction.XENT)
+                    .activation(Activation.SIGMOID).nIn(3).nOut(labelsCount).build())
             .backprop(true).pretrain(false)
             .build();
 
@@ -114,7 +115,7 @@ public class BinaryClassifier {
 
     private List<LearnableModel> returnPredictions(List<LearnableModel> list, INDArray output){
         for (int i = 0; i < list.size() ; i++) {
-            int probability = (int) Math.round(output.slice(i).getDouble(0)*100);;
+            int probability = (int) Math.round(output.slice(i).getDouble(0)*100);
             list.get(i).setProbability(probability);
         }
         return list;
